@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 100vh;
+    margin: 0;
+
+    height: 100%;
+    overflow: auto;
+}
+
+.countries {
+    padding: 0;
+    list-style-type: none;
+    max-width: 480px;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.country-item {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    margin: 10px 0;
+}
+
+.country-item:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.country-flag {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.country-name {
+    flex: 2;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    margin: 0 5px;
+}
+
+.country-info {
+    color: #777;
+    padding: 0 15px;
+    flex: 1;
+}
+
+.country-population {
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.country-population-text {
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+input {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 100%;
+    max-width: 480px;
+    margin-bottom: 20px;
+}
+
+/* Responsive Media Queries */
+
+@media (max-width: 768px) {
+    .countries {
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .country-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .country-flag {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .country-name {
+        flex: none;
+        margin: 0;
+        text-align: center;
+    }
+
+    .country-info {
+        padding: 0;
+        flex: none;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    input {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+}
