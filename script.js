@@ -21,6 +21,7 @@ const fetchcountries = async ()=>{
         'https://restcountries.com/v3.1/all?fields=name,capital,currencies,population,flags'
         )
         .then(res=>res.json())
+    // console.log(countries)
 };
 
 const showCountries = async () => {
@@ -55,10 +56,9 @@ const showCountries = async () => {
 
         
         // country-population
-        const country_population = document.createElement('h2');
+        const country_population = document.createElement('h4');
         country_population.innerText = `Population: ${numberWithCommas(country.population)}`;
         country_population.classList.add('country-population');
-        
         
         country_info.appendChild(country_population);
         
@@ -74,7 +74,7 @@ const showCountries = async () => {
             const country_info1 = document.createElement('div');
             country_info1.classList.add('country-info1');
     
-            const country_currency = document.createElement('h2');
+            const country_currency = document.createElement('h4');
             country_currency.innerHTML = `Currency:  ${currency.symbol}, ${currency.name}`;
             country_currency.classList.add('country-currency');
             country_info1.appendChild(country_currency);
