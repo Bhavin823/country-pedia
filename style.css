@@ -49,6 +49,7 @@ body {
     width: 40px;
     height: auto;
     margin-right: 10px;
+    border: 1px solid #ddd;
 }
 
 .country-name {
@@ -64,7 +65,20 @@ body {
     flex: 1;
 }
 
+.country-info1 {
+    color: #777;
+    padding: 0 15px;
+    flex: 1;
+}
+
 .country-population {
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.country-currency{
     font-weight: 300;
     line-height: 24px;
     margin: 0;
@@ -114,7 +128,7 @@ input {
         text-align: center;
     }
 
-    .country-info {
+    .country-info, .country-info1 {
         padding: 0;
         flex: none;
         margin-top: 10px;
