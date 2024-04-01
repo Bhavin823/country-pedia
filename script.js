@@ -39,9 +39,11 @@ const showCountries = async () => {
         const li = document.createElement('li');
         li.classList.add('country-item');
 
+        // image
         const country_flag = document.createElement('img');
         // Setting the image source
         country_flag.src = country.flags.png;
+        country_flag.alt = country.name.common;
         // country_flag.style = 'height:100px; width:150px; border:1px solid #ddd;'
         country_flag.classList.add('country-flag');
 
@@ -84,6 +86,9 @@ const showCountries = async () => {
     });
     
     result.appendChild(ul);
+    if (search_term === '') {
+        result.innerHTML = '';
+    }
 }
 
 // showCountries();
