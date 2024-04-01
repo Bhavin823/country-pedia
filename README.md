@@ -20,9 +20,3 @@ The page is hosted on GitHub Pages and can be accessed using the following link:
 - HTML, CSS, JavaScript
 - REST Countries API (https://restcountries.com/v3.1/all)
 
-## Getting Started
-
-To get started with Country Pedia, simply clone the repository and open the `index.html` file in your web browser.
-
-```bash
-git clone https://github.com/your-username/country-pedia.git
